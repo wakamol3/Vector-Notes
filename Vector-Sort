@@ -1,0 +1,39 @@
+// declare a vector
+// establish N size array
+// input each value of array
+// use v.push_back(x); to append the array
+// use sort(v.begin(), v.end()); to sort the array from beg to end
+// update size variable to size of array using v.size();
+// print out array of v
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    vector<int> v;
+    int size = v.size();
+    int x;
+    int n;
+    cin >> n;
+    for(int i = 0; i < n; i++)
+    {
+        cin >> x;
+        v.push_back(x);
+        
+    }
+    sort(v.begin(), v.end());
+    size = v.size();
+    for(int i = 0; i < v.size(); i++)
+    {
+        cout << v[i] << " ";
+    }
+    
+    
+    return 0;
+}
